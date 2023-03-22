@@ -1,0 +1,122 @@
+@import url(./reset.css);
+
+/* Шрифты */
+@font-face {
+    font-family: "Stolzl";
+    src: url(./../fonts/stolzl_regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro Bold";
+    src: url(./../fonts/gothampro_bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro Black";
+    src: url(./../fonts/gothampro_black.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,
+body{
+    font-family: "Stolzl";
+    background-color: #210E09;
+    color: #ffffff;
+
+}
+
+.page{
+    width: 1305px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    font-size: 14px;
+    line-height: 150%;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo{
+    width: 157.89px;
+    height: 40px;
+}
+
+.header__menu{
+    display: flex;
+    gap: 30px;
+}
+
+.header__menu__link:hover, .headerBtn:hover{
+    color: #bebebe;
+}
+
+.headerBtn{
+    padding: 15px 30px;
+
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* first-screen */
+.first-screen{
+    margin-top: 53px;
+
+    height: 542px;
+
+    font-family: "Gotham Pro Bold";
+}
+
+
+.first-screen__banquets{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-end;
+
+    background-image: url(./../img/fSBanquets.png);
+    background-size: cover;
+    width: 856px;
+    height: 542px;
+
+    padding: 45px 60px;
+
+}
+
+
+.first-screenBtn{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 150%;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    padding: 10px 20px 7px;
+
+    width: 155px;
+}
+
+.first-screen__text{
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
