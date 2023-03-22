@@ -74,9 +74,13 @@ body{
 
 /* first-screen */
 .first-screen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     margin-top: 53px;
 
-    height: 542px;
+    height: 540px;
 
     font-family: "Gotham Pro Bold";
 }
@@ -91,7 +95,7 @@ body{
     background-image: url(./../img/fSBanquets.png);
     background-size: cover;
     width: 856px;
-    height: 542px;
+    height: 540px;
 
     padding: 45px 60px;
 
@@ -118,4 +122,100 @@ body{
     line-height: 150%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+}
+
+
+
+.first-screen__announcements{
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    height: 542px;
+}
+
+.announcements__menu{
+    display: flex;
+    
+}
+
+.announcements__menu__item{
+    background: rgba(213, 98, 29, 0.05);
+    border-radius: 5px 5px 0px 0px;
+    
+    width: 208px;
+    height: 40px;
+
+    padding: 12px 10px 7px;
+
+    text-align: center;
+    
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.announcements__menu__item.active{
+    background: rgba(213, 98, 29, 0.1);
+}
+
+.announcements__tab:not(.active){
+    display: none;
+}
+
+.announcements__tab.active{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+
+    height: 502px;
+
+    background: rgba(213, 98, 29, 0.1);
+    border-radius: 0px 0px 5px 5px;
+
+    padding: 39px 35px 37px;
+}
+
+.announcements__img{
+    width: 160px;
+    height: 200px;
+}
+
+/* kitchen */
+.kitchen{
+    margin-top: 120px;
+
+    height: 983px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.kitchen__header{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.kitchen__header__title{
+    background-color: #ffffff;
+    
+    padding: 10px 20px 7px;
+    
+    width: 244px;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #210E09;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.kitchen__header__text{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 150%;
 }
