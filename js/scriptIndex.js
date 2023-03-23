@@ -16,3 +16,23 @@ for (let i = 0; i < links.length; i++) {
     event.preventDefault();
   });
 }
+
+let accordion = document.querySelector('.accordion');
+let linkss  = accordion.querySelectorAll('.accordion__tab .accordion__tab__link');
+
+for (let link of linkss) {
+  link.addEventListener('click', function(event) {
+    let activeTab = accordion.querySelector('.accordion__tab.active');
+    
+    if (activeTab) {
+      activeTab.classList.remove('active');
+    }
+    
+    let newTab = link.closest('.accordion__tab');
+    if (newTab !== activeTab) {
+      newTab.classList.add('active');
+    }
+    
+    event.preventDefault();
+  });
+}

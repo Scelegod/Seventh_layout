@@ -68,6 +68,8 @@ body{
     border: 2px solid #D5621D;
     border-radius: 5px;
 
+    font-size: 14px;
+    line-height: 21px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
@@ -185,7 +187,7 @@ body{
 .kitchen{
     margin-top: 120px;
 
-    height: 983px;
+    /* height: 983px; */
 
     display: flex;
     flex-direction: column;
@@ -201,13 +203,14 @@ body{
     gap: 40px;
 }
 
-.kitchen__header__title{
+.kitchen__header__title, .events-turists__event__title, .events-turists__turist__title, .rider__title{
     background-color: #ffffff;
     
     padding: 10px 20px 7px;
     
     /* width: 244px; */
     
+    font-family: "Gotham Pro Bold";
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
@@ -216,7 +219,7 @@ body{
     text-transform: uppercase;
 }
 
-.kitchen__header__text{
+.kitchen__header__text, .events-turists__event__text, .events-turists__turist__text, .rider__text{
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 40px;
@@ -306,4 +309,119 @@ body{
 
     padding: 15px 30px;
     margin-top: 111px;
+}
+
+/* events-turists */
+.events-turists{
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+
+    margin-top: 150px;
+
+    height: 560px;
+}
+
+.events-turists__event, .events-turists__turist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.events-turists__event, .events-turists__turist{
+    width: 440px;
+}
+.events-turists__content__img{
+    width: 416px;
+    height: 560px;
+}
+
+.events-turists__event__note, .events-turists__turist__note{
+    text-align: center;
+    font-size: 14px;
+    line-height: 150%;
+    width: 376px;
+}
+
+.events-turists__eventBnt, .events-turists__turistBnt{
+    padding: 15px 30px;
+
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* rider */
+.rider{
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    padding: 0 110px;
+}
+
+.rider__accordion{
+    margin-top: 20px;
+}
+
+.accordion__tab{
+    margin-top: 20px;
+    width: 526px;
+}
+
+.accordion__tab__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.accordion__tab__link{
+    background: rgba(213, 98, 29, 0.1);
+    border-radius: 5px;
+    padding: 20px 40px;
+
+    font-family: "Gotham Pro Bold";
+}
+
+.accordion__tab .accordion__tab__link a, .accordion__tab .accordion__tab__link img{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    
+    text-transform: uppercase;
+}
+
+.accordion__tab:not(.active) .accordion__tab__text{
+    display: none;
+}
+
+.accordion__tab.active{
+    background-color: #D5621D;
+    
+    padding-bottom: 20px;
+}
+
+.accordion__tab__text{
+    padding: 0 40px;
+
+    font-family: "Stolzl";
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.accordion__tab__text__item{
+    list-style-type: initial;
+
+    padding: 5px 0;
+
 }
