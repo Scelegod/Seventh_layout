@@ -1,0 +1,111 @@
+@import url(./reset.css);
+
+/* Шрифты */
+@font-face {
+    font-family: "Stolzl";
+    src: url(./../fonts/stolzl_regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro Bold";
+    src: url(./../fonts/gothampro_bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro Black";
+    src: url(./../fonts/gothampro_black.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,
+body{
+    font-family: "Stolzl";
+    background-color: #210E09;
+    color: #ffffff;
+
+}
+
+.page{
+    width: 1305px;
+    margin: 0 auto;
+}
+
+
+
+/* Header */
+.header{
+    font-size: 14px;
+    line-height: 150%;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo{
+    width: 157.89px;
+    height: 40px;
+}
+
+.header__menu{
+    display: flex;
+    gap: 30px;
+}
+
+.header__menu__link:hover, .headerBtn:hover{
+    color: #bebebe;
+}
+
+.headerBtn{
+    padding: 15px 30px;
+
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px){
+    .page{
+        width: 1000px;
+    }
+}
+
+@media (max-width: 768px){
+    .page{
+        width: 750px;
+    }
+    
+    .header__menu{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    .page{
+        width: 420px;
+    }
+    
+    .header__menu{
+        display: none;
+    }
+
+    .header{
+        margin: 0 10px;
+    }
+
+    .headerBtn{
+        padding: 10px 15px;
+    }
+}

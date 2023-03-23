@@ -1,78 +1,4 @@
-@import url(./reset.css);
 
-/* Шрифты */
-@font-face {
-    font-family: "Stolzl";
-    src: url(./../fonts/stolzl_regular.otf);
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Gotham Pro Bold";
-    src: url(./../fonts/gothampro_bold.ttf);
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Gotham Pro Black";
-    src: url(./../fonts/gothampro_black.ttf);
-    font-style: normal;
-    font-weight: normal;
-}
-
-html,
-body{
-    font-family: "Stolzl";
-    background-color: #210E09;
-    color: #ffffff;
-
-}
-
-.page{
-    width: 1305px;
-    margin: 0 auto;
-}
-
-/* Header */
-.header{
-    font-size: 14px;
-    line-height: 150%;
-
-    margin-top: 30px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.headerLogo{
-    width: 157.89px;
-    height: 40px;
-}
-
-.header__menu{
-    display: flex;
-    gap: 30px;
-}
-
-.header__menu__link:hover, .headerBtn:hover{
-    color: #bebebe;
-}
-
-.headerBtn{
-    padding: 15px 30px;
-
-    border: 2px solid #D5621D;
-    border-radius: 5px;
-
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
 
 /* first-screen */
 .first-screen{
@@ -240,8 +166,9 @@ body{
 .kitchen__menu__items{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 56px;
+    /* column-gap: 56px; */
     row-gap: 104px;
+    justify-content: space-between;
 }
 
 .menu__item{
@@ -332,6 +259,7 @@ body{
 .events-turists__event, .events-turists__turist{
     width: 440px;
 }
+
 .events-turists__content__img{
     width: 416px;
     height: 560px;
@@ -490,6 +418,7 @@ body{
     border-radius: 5px;
 }
 
+/* Footer */
 .footer{
     margin-top: 150px;
 
@@ -503,6 +432,8 @@ body{
     display: flex;
     flex-direction: row;
     gap: 24px;
+
+    margin-top: 80px;
 }
 
 .footer__content__info{
@@ -549,9 +480,168 @@ body{
     opacity: 0.5;
 }
 
-iframe.map{
+iframe.map__medium{
     width: 856px; 
     height: 656px; 
     border: 2px solid #D5621D;
     border-radius: 5px;
+}
+
+iframe.map__small{
+    display: none;
+}
+
+.footer__entitlement{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    width: 100%;
+}
+
+.footer__entitlement__line{
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
+}
+
+.footer__entitlement__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .menu__item{
+        width: 400px;
+        height: auto;
+    }
+
+    .kitchen__menu{
+        gap: 20px;
+    }
+    .rider__content{
+        gap: 20px;
+    }
+
+    .events-turists{
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        height: auto;
+    }
+
+    .events-turists__event, .events-turists__turist{
+        gap: 40px;
+        width: 500px;
+    }
+    
+    .events-turists__event__note, .events-turists__turist__note{
+        width: auto;
+    }
+
+    .sound-producers__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .rider{
+        padding: 0;
+    }
+
+    .footer__content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer__content__info{
+        width: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .first-screen{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .first-screen__banquets{
+        padding: 0;
+        width: auto;    
+    }
+    
+    .first-screen__announcements{
+        width: 700px;
+    }
+
+    .announcements__tab.active{
+        justify-content: space-between;
+    }
+
+    .menu__item{
+        width: auto;
+    }
+
+    .kitchen__menu__items{
+        row-gap: 30px;
+    }
+
+    .rider__content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map__medium{
+        display: none;
+    }
+
+    iframe.map__small{
+        width: 600px;
+        height: 400px;
+        display: block;
+    }
+}
+
+
+@media (max-width: 425px){
+    .first-screen{
+        margin: 50px 10px;
+
+    }
+    .first-screen__announcements{
+        width: auto;
+    }
+
+    .menu__item{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .events-turists__event, .events-turists__turist{
+        width: 400px;
+    }
+
+    .accordion__tab{
+        width: 400px;
+    }
+
+    iframe.map__small{
+        width: 400px;
+        height: 200px;
+        display: block;
+    }
+    
+    .footer, .sound-producers{
+        margin: 0 10px;
+        
+    }
 }
