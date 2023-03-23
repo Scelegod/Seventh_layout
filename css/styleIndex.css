@@ -203,7 +203,7 @@ body{
     gap: 40px;
 }
 
-.kitchen__header__title, .events-turists__event__title, .events-turists__turist__title, .rider__title{
+.kitchen__header__title, .events-turists__event__title, .events-turists__turist__title, .rider__title, .footer__title{
     background-color: #ffffff;
     
     padding: 10px 20px 7px;
@@ -219,7 +219,7 @@ body{
     text-transform: uppercase;
 }
 
-.kitchen__header__text, .events-turists__event__text, .events-turists__turist__text, .rider__text{
+.kitchen__header__text, .events-turists__event__text, .events-turists__turist__text, .rider__text, .footer__text{
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 40px;
@@ -368,6 +368,12 @@ body{
     padding: 0 110px;
 }
 
+.rider__content{
+    display: flex;
+    flex-direction: row;
+    gap: 134px;
+}
+
 .rider__accordion{
     margin-top: 20px;
 }
@@ -424,4 +430,128 @@ body{
 
     padding: 5px 0;
 
+}
+
+.sound-producers{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    margin-top: 40px;
+}
+
+.sound-producers__text{
+    font-family: "Gotham Pro Black";
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sound-producers__content{
+    display: flex;
+    gap: 24px;
+}
+
+.content__producer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.sound-producers__img{
+    width: 196px;
+    height: 210px;
+    border-radius: 5px;
+}
+
+.sound-producers__name{
+    font-family: "Gotham Pro Bold";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sound-producers__soc-net{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.sound-producers__soc-net__icons{
+    padding: 10px;
+
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+}
+
+.footer{
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.footer__content__info{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    background: rgba(213, 98, 29, 0.1);
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+
+    padding: 50px;
+
+    width: 416px;
+}
+
+.info__communication, .info__directors{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.info__communication__address, .info__communication__number, .info__communication__work-regime, .info__directors__director, .info__directors__art-director{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info__communication__title, .info__director__title{
+    font-family: "Gotham Pro Bold";
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.info__communication__text, .info__director__text{
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.info__line{
+    border: 1px solid #ffffff;
+    opacity: 0.5;
+}
+
+iframe.map{
+    width: 856px; 
+    height: 656px; 
+    border: 2px solid #D5621D;
+    border-radius: 5px;
 }
