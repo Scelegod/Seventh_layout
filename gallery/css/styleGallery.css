@@ -1,0 +1,27 @@
+.gallery, .gallery__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery{
+    margin-top: 55px;
+}
+
+.gallery__header{
+    gap: 40px;
+}
+
+.gallery__content__focus.active{
+    position: absolute;
+    top: 188px;
+    left: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.gallery__content__focus{
+    display: none;
+}

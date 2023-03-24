@@ -10,7 +10,32 @@
 </head>
 <body>
     <div class="page">
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenav__icons">
+                <img class="sidenav__icons__cancel" src="./icons/cancel.svg" alt="cancel">
+            </div>
+            <div class="sidenav__img">
+                <img class="sidenav__img__logo" src="./img/headerLogo.png" alt="headerLogo">
+            </div>
+            <div class="sidenav__menu">
+                <a class="sidenav__menu__item" href="./index.html">Главная</a>
+                <a class="sidenav__menu__item" href="">Меню</a>
+                <a class="sidenav__menu__item" href="./poster/posterIndex.html">Афиша</a>
+                <a class="sidenav__menu__item" href="">Сотрудничество</a>
+                <a class="sidenav__menu__item" href="./gallery/galleryIndex.html">Галерея</a>
+                <a class="sidenav__menu__item" href="">Новости</a>
+            </div>
+            <button class="headerBtn">Бронирование</button>
+        </div>
+
+
+
         <header class="header">
+            <div class="header__burger" >
+                <p class="burger__line"></p>
+                <p class="burger__line"></p>
+                <p class="burger__line"></p>
+            </div>
             <a href="./index.html">
                 <img class="headerLogo" src="./img/headerLogo.png" alt="headerLogo">
             </a>
@@ -19,7 +44,7 @@
                 <a class="header__menu__link">Меню</a>
                 <a href="./poster/posterIndex.html" class="header__menu__link">Афиша</a>
                 <a class="header__menu__link">Сотрудничество</a>
-                <a class="header__menu__link">Галерея</a>
+                <a href="./gallery/galleryIndex.html" class="header__menu__link">Галерея</a>
                 <a class="header__menu__link">Новости</a>
             </div>
             <button class="headerBtn">Бронирование</button>
@@ -337,5 +362,6 @@
 
     </div>
     <script src="./js/scriptIndex.js"></script>
+    <script src="./js/windowFunc.js"></script>
 </body>
 </html>
