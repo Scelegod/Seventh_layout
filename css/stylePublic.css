@@ -60,6 +60,10 @@ body{
     gap: 30px;
 }
 
+.header__menu__link{
+    color: #ffffff;
+}
+
 .header__menu__link:hover, .headerBtn:hover{
     color: #bebebe;
 }
@@ -76,9 +80,140 @@ body{
     text-transform: uppercase;
 }
 
+/* Общие классы */
+.kitchen__header__title, .events-turists__event__title, .events-turists__turist__title, .rider__title, .footer__title, .poster__header__title{
+    background-color: #ffffff;
+    
+    padding: 10px 20px 7px;
+    
+    /* width: 244px; */
+    
+    font-family: "Gotham Pro Bold";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #210E09;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.kitchen__header__text, .events-turists__event__text, .events-turists__turist__text, .rider__text, .footer__text, .poster__header__text{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 150%;
+    font-family: "Gotham Pro Bold";
+}
+
+
+/* Footer */
+.footer{
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+    margin-top: 80px;
+}
+
+.footer__content__info{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    background: rgba(213, 98, 29, 0.1);
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+
+    padding: 50px;
+
+    width: 416px;
+}
+
+.info__communication, .info__directors{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.info__communication__address, .info__communication__number, .info__communication__work-regime, .info__directors__director, .info__directors__art-director{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info__communication__title, .info__director__title{
+    font-family: "Gotham Pro Bold";
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.info__communication__text, .info__director__text{
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.info__line{
+    border: 1px solid #ffffff;
+    opacity: 0.5;
+}
+
+iframe.map__medium{
+    width: 856px; 
+    height: 656px; 
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+}
+
+iframe.map__small{
+    display: none;
+}
+
+.footer__entitlement{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    width: 100%;
+}
+
+.footer__entitlement__line{
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
+}
+
+.footer__entitlement__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
 @media (max-width: 1024px){
     .page{
         width: 1000px;
+    }
+
+    .footer__content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer__content__info{
+        width: auto;
     }
 }
 
@@ -89,6 +224,16 @@ body{
     
     .header__menu{
         display: none;
+    }
+
+    .map__medium{
+        display: none;
+    }
+
+    iframe.map__small{
+        width: 600px;
+        height: 400px;
+        display: block;
     }
 }
 
@@ -107,5 +252,20 @@ body{
 
     .headerBtn{
         padding: 10px 15px;
+    }
+    
+    .footer{
+        margin: 40px 10px;
+        
+    }
+
+    iframe.map__small{
+        width: 400px;
+        height: 200px;
+        display: block;
+    }
+
+    .footer__entitlement__content{
+        flex-direction: column;
     }
 }

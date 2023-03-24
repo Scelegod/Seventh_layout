@@ -129,29 +129,9 @@
     gap: 40px;
 }
 
-.kitchen__header__title, .events-turists__event__title, .events-turists__turist__title, .rider__title, .footer__title{
-    background-color: #ffffff;
-    
-    padding: 10px 20px 7px;
-    
-    /* width: 244px; */
-    
-    font-family: "Gotham Pro Bold";
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 150%;
-    color: #210E09;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
 
-.kitchen__header__text, .events-turists__event__text, .events-turists__turist__text, .rider__text, .footer__text{
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-size: 40px;
-    line-height: 150%;
-    font-family: "Gotham Pro Bold";
-}
+
+
 
 .kitchen__menu{
     display: flex;
@@ -634,13 +614,7 @@ iframe.map__small{
         width: 400px;
     }
 
-    iframe.map__small{
-        width: 400px;
-        height: 200px;
-        display: block;
-    }
-    
-    .footer, .sound-producers{
+    .sound-producers{
         margin: 0 10px;
         
     }
