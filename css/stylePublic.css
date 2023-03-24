@@ -135,7 +135,7 @@ body{
     color: #bebebe;
 }
 
-.headerBtn{
+.headerBtn, .sidenavBtn{
     padding: 15px 30px;
 
     border: 2px solid #D5621D;
@@ -299,6 +299,10 @@ iframe.map__small{
         gap: 10px;
     }
 
+    .footer__content{
+        margin-top: 20px;
+    }
+
     .map__medium{
         display: none;
     }
@@ -307,6 +311,10 @@ iframe.map__small{
         width: 600px;
         height: 400px;
         display: block;
+    }
+    
+    .footer{
+        margin-top: 50px;
     }
 }
 
@@ -326,7 +334,23 @@ iframe.map__small{
     .headerBtn{
         padding: 10px 15px;
     }
-    
+ 
+    .kitchen__header__text, .events-turists__event__text, .events-turists__turist__text, .rider__text, .footer__text, .poster__header__text{
+        font-size: 26px;
+    }
+
+    .kitchen__header__title, .events-turists__event__title, .events-turists__turist__title, .rider__title, .footer__title, .poster__header__title{
+        font-size: 12px;
+    }
+
+    .info__communication__title, .info__director__title{
+        font-size: 16px;
+    }
+
+    .info__communication__text, .info__director__text, .headerBtn{
+        font-size: 12px;
+    }
+
     .footer{
         margin: 40px 10px;
         
@@ -341,4 +365,43 @@ iframe.map__small{
     .footer__entitlement__content{
         flex-direction: column;
     }
+}
+
+@media (max-width: 375px) {
+    .page{
+        width: 375px;
+    }
+
+    .header{
+        gap: 60px;
+        justify-content: flex-start;
+    }
+    .headerBtn{
+        display: none;
+    }
+
+    iframe.map__small{
+        width: 360px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .page{
+        width: 320px;
+    }
+
+    .header{
+        gap: 40px;
+        justify-content: flex-start;
+    }
+
+    .headerBtn{
+        display: none;
+    }
+
+    iframe.map__small{
+        width: 310px;
+    }
+
 }

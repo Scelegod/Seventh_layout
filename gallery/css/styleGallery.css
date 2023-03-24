@@ -12,10 +12,29 @@
     gap: 40px;
 }
 
+.gallery__content__img{
+    width: 306px;
+    height: 350px;
+}
+
+.gallery__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+    margin-top: 100px;
+}
+
+.gallery__content{
+    position: relative;
+}
+
 .gallery__content__focus.active{
     position: absolute;
-    top: 188px;
-    left: 35px;
+
+    top: 145px;
+    left: 125px;
 
     display: flex;
     flex-direction: column;
@@ -24,4 +43,11 @@
 }
 .gallery__content__focus{
     display: none;
+}
+
+@media (max-width: 768px) {
+    .gallery__container{
+        margin-top: 20px;
+    }
+    
 }

@@ -527,7 +527,7 @@ iframe.map__small{
 
     .sound-producers__content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .rider{
@@ -554,7 +554,7 @@ iframe.map__small{
     }
 
     .first-screen__banquets{
-        padding: 0;
+        padding: 20px;
         width: auto;    
     }
     
@@ -578,11 +578,14 @@ iframe.map__small{
         flex-direction: column;
         align-items: center;
     }
-
+    
     .map__medium{
         display: none;
     }
-
+    .events-turists, .rider, .footer{
+        margin-top: 50px;
+    }
+    
     iframe.map__small{
         width: 600px;
         height: 400px;
@@ -594,8 +597,8 @@ iframe.map__small{
 @media (max-width: 425px){
     .first-screen{
         margin: 50px 10px;
-
     }
+
     .first-screen__announcements{
         width: auto;
     }
@@ -617,5 +620,79 @@ iframe.map__small{
     .sound-producers{
         margin: 0 10px;
         
+    }
+
+    .kitchen__menu__arrowLeft, .kitchen__menu__arrowRight{
+        padding: 10px;
+    }
+
+    .kitchen__menu{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .first-screen__text{
+        font-size: 30px;
+    }
+
+    .first-screen__announcements{
+        width: 370px;
+        height: auto;
+    }
+
+    .announcements__tab.active{
+        height: auto;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .events-turists__event, .events-turists__turist, .accordion__tab{
+        width: 370px;
+    }
+
+    .accordion__tab .accordion__tab__link a{
+        font-size: 16px;
+    }
+
+    .sound-producers__text{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 320px) {
+    .first-screen__text{
+        font-size: 30px;
+    }
+
+    .first-screen__announcements{
+        width: 310px;
+        height: auto;
+    }
+
+    .announcements__tab.active{
+        height: auto;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .events-turists__event, .events-turists__turist, .accordion__tab{
+        width: 310px;
+    }
+
+    .accordion__tab .accordion__tab__link a{
+        font-size: 16px;
+    }
+
+    .sound-producers__text{
+        font-size: 26px;
+    }
+
+    .menu__item__price{
+        padding: 5px 10px;
+    }
+
+    .menu__item__title{
+        width: 100px;
     }
 }
