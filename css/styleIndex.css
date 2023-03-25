@@ -157,6 +157,8 @@
 
     width: 486px;
     height: 111px;
+
+    cursor: pointer;
 }
 
 .menu__item__img{
@@ -204,6 +206,7 @@
     padding: 15px 15px;
 
     color: #ffffff;
+    cursor: pointer;
 }
 
 .kitchenBnt{
@@ -304,6 +307,8 @@
     padding: 20px 40px;
 
     font-family: "Gotham Pro Bold";
+
+    cursor: pointer;
 }
 
 .accordion__tab .accordion__tab__link a, .accordion__tab .accordion__tab__link img{
@@ -396,6 +401,8 @@
 
     border: 2px solid #D5621D;
     border-radius: 5px;
+
+    cursor: pointer;
 }
 
 /* Footer */

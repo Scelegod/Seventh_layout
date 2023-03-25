@@ -133,6 +133,7 @@ body{
 
 .header__menu__link:hover, .headerBtn:hover{
     color: #bebebe;
+    cursor: pointer;
 }
 
 .headerBtn, .sidenavBtn{
